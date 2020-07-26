@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:text="Guess the word"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#03453F"
+        android:textAlignment="center"
+        android:textColor="#B0F1B2"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <EditText
+        android:id="@+id/et_guess"
+        android:layout_width="406dp"
+        android:layout_height="58dp"
+        android:background="#E7F6FD"
+        android:ems="10"
+        android:hint="word"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#493801"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368" />
+
+    <Button
+        android:id="@+id/w_check"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#F8BD65"
+        android:text="CHECK"
+        android:textColor="#E11C0D"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.597" />
+
+    <TextView
+        android:id="@+id/tv_word"
+        android:layout_width="388dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:background="#FAD9A9"
+        app:layout_constraintBottom_toBottomOf="@+id/w_new"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <Button
+        android:id="@+id/w_new"
+        android:layout_width="393dp"
+        android:layout_height="65dp"
+        android:text="NEW"
+        android:textSize="30sp"
+        android:background="#630424"
+        android:textColor="#F3D9E2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
+</androidx.constraintlayout.widget.ConstraintLayout>
